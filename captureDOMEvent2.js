@@ -104,11 +104,7 @@ function addWindowToPage(){
 	var windowHTML='<div id="_plugInselectWindow"></div>';
    document.body.innerHTML+=windowHTML;
    var w=$("#_plugInselectWindow");
-   w.window({  
-    width:600,  
-    height:400,  
-    modal:false  
-});
+   w.window({width:600,height:400,modal:false});
  
     w.window("open");
 }
