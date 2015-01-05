@@ -103,7 +103,6 @@ var XML=window.XML||{
 function addWindowToPage(){
 	var windowHTML='<div id="_plugInselectWindow" class="easyui-window" data-options="closed:true,modal:false,title:\'Test Window\'" style="width:300px;height:100px;"></div>';
    document.body.innerHTML+=windowHTML;
-    $("#_plugInselectWindow").window(
-    	"open");
+    $("#_plugInselectWindow").window("open");
 }
 addWindowToPage();
