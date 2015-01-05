@@ -101,8 +101,15 @@ var XML=window.XML||{
 	}
 };
 function addWindowToPage(){
-	var windowHTML='<div id="_plugInselectWindow" class="easyui-window" data-options="closed:true,modal:false,title:\'Test Window\'" style="width:300px;height:100px;"></div>';
+	var windowHTML='<div id="_plugInselectWindow"></div>';
    document.body.innerHTML+=windowHTML;
-    $("#_plugInselectWindow").window("open");
+   var w=$("#_plugInselectWindow");
+   w.window({  
+    width:600,  
+    height:400,  
+    modal:false  
+});
+ 
+    w.window("open");
 }
 addWindowToPage();
